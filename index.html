@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url();
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px;
+}
+.container {
+    position: relative;
+    width: calc(100% - 100px);
+    min-height: calc(100vh - 200px);
+    min-height: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 15px 35px rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+header {
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    left: 20px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+header .logo {
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+}
+header ul {
+    display: flex;
+}
+header ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+header ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #8a2435;
+    padding: 8px 15px;
+    border-radius: 25px;
+}
+header ul li a:hover,
+header ul li a.active {
+    background: #fff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+.content {
+    transform: translateX(-100px);
+    max-width: 700px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255. 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    padding-left: 110px;
+}
+.content h2 {
+    font-size: 2em;
+    color: blueviolet;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+}
+.content h3{
+    font-size: 1.5em;
+    color: #000000;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+}
+.content p {
+    font-size: 1.5em;
+    color: #9c9ea4;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+}
+.content a {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #fff;
+    color: #8a2435;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.imgBx img {
+    max-width: 400px;
+    animation: animate 5s linear infinite;
+    margin: 0 200px;
+}
+@keyframes animate {
+    0%,100% {
+        transform: translateY(50px);
+    }
+    50% {
+        transform: translateY(100px);
+    }
+}
+.sci {
+    position: absolute;
+    right: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sci li {
+    list-style: none;
+}
+.sci li a {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 5px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.sci li a img {
+    transform: scale(0.6);
+    transition: 0.5s;
+}
+.sci li:hover a img {
+    transform: scale(0.6) rotate(360deg);
+}
+.copyrightText {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #8a2435;
+}
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <header>
+                <a class="logo">สวัสดี ชาวโลก วันนี้ ข่อยจะมาแนะนำตัวเอง </a>
+                <ul>
+                    <li><a href="https://www.facebook.com/mixkysad">Facebook</a></li>
+                </ul>
+            </header>
+            <div class="content">
+                <h2>ชื่อ มิกซ์</h2>
+                <h2>อายุ 13</h2>
+                <h3>อาหารที่ชอบแดก</h3>
+                <p>- ผัดกระเพรา</p>
+                <h3>นิสัย</h3>
+                <p> - สงบ ปัญญาอ่อน</p>
+                <p>- ติดเกม</p>
+                <p>- ไม่สนิท จะไม่ค่อยอยากคุยด้วย ชอบทำอะไรด้วยตัวเองมากกว่าส่วนใหญ่</p>
+            </div>
+            <div class="imgBx">
+                <img src="https://scontent.fbkk22-2.fna.fbcdn.net/v/t39.30808-6/343439527_922872232165956_4242324883691589390_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHTmCKW12c543b7cXPxGBcRm6lGayHhaAebqUZrIeFoB181xtyHtiL0H6RX-Ad4H43TRbPaULF09xvinTZxwXxy&_nc_ohc=WT2H8VWRmr4AX8BalXV&_nc_ht=scontent.fbkk22-2.fna&oh=00_AfDKYTiCz1KmOFWbhr0nT6r7pHDLOrmFAAEzSIOr-wnP5w&oe=646A6FFE">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
